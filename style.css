@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* display: flex;
+        justify-content: center; */
+  background-color: black;
+  margin-top: 25px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+}
+.attack1 {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Attack_1.png);
+  animation: attack1 0.8s steps(6) infinite;
+  background-color: white;
+}
+.attack2 {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Attack_2.png);
+  animation: attack2 0.5s steps(3) infinite;
+  background-color: white;
+}
+.attack3 {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Attack_3.png);
+  animation: attack3 0.5s steps(3) infinite;
+  background-color: white;
+}
+.attack4 {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Attack_4.png);
+  animation: attack4 1s steps(10) infinite;
+  background-color: white;
+}
+.walk {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Walk.png);
+  background-color: white;
+  animation: walkrunjump 1s steps(8) infinite;
+}
+.run {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Run.png);
+  background-color: white;
+  animation: walkrunjump 0.5s steps(8) infinite;
+}
+.jump {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Jump.png);
+  background-color: white;
+  animation: walkrunjump 1s steps(8) infinite;
+}
+.hurt {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Hurt.png);
+  background-color: white;
+  animation: hurt 0.5s steps(2) infinite;
+}
+.dead {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Dead.png);
+  background-color: white;
+  animation: dead 1s steps(5) infinite;
+}
+.idle {
+  margin: 10px;
+  width: 128px;
+  height: 128px;
+  border: 1px solid white;
+  background: url(img/sprite/Idle.png);
+  background-color: white;
+  animation: idle 1s steps(5) infinite;
+}
+
+@keyframes kalp {
+  0% {
+    scale: 0.8;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes attack1 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -768px, 0;
+  }
+}
+@keyframes attack2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -384px, 0;
+  }
+}
+@keyframes attack3 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -384px, 0;
+  }
+}
+@keyframes attack4 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1280px, 0;
+  }
+}
+@keyframes walkrunjump {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -1024px, 0;
+  }
+}
+@keyframes hurt {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -256px 0;
+  }
+}
+@keyframes dead {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -640px 0;
+  }
+}
+@keyframes idle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -640px 0;
+  }
+}
